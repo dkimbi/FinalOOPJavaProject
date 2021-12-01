@@ -33,7 +33,7 @@ public class Test {
     public static void testAddArtToInventory() {
         Manager manager = new Manager();
         Art art = new Print("1st Edition", "Drama",
-                8278121289l, 100.00, 2017, "The First Print", "This a print art piece", "Adam");
+                8278121289L, 100.00, 2017, "The First Print", "This a print art piece", "Adam");
         manager.addArt(art);
         printInventory(manager);
     }
@@ -43,7 +43,7 @@ public class Test {
         System.out.println("Printing inventory before removing an art piece");
         printInventory(manager);
         System.out.println("Removing an art piece by valid input");
-        manager.removeArtPiece(8278121289l);
+        manager.removeArtPiece(8278121289L);
         System.out.println("Printing inventory after removing an art piece");
         printInventory(manager);
     }
@@ -51,7 +51,7 @@ public class Test {
     public static void testRemoveArtInvalidFromInventory() {
         Manager manager = new Manager();
         System.out.println("Removing an art piece by invalid input");
-        manager.removeArtPiece(1111111111l);
+        manager.removeArtPiece(1111111111L);
     }
 
     public static void testAddTransaction() throws CloneNotSupportedException {
@@ -118,7 +118,7 @@ public class Test {
         try {
             Transaction transactionById = manager.retrieveTransactionById(123456789);
             System.out.println(transactionById.printTransaction() + "\n");
-            Transaction transactionByArtId = manager.retrieveTransactionByArtId(1010101010l);
+            Transaction transactionByArtId = manager.retrieveTransactionByArtId(1010101010L);
             System.out.println(transactionByArtId.printTransaction() + "\n");
             List<Transaction> transactionsByDate = manager.retrieveTransactionByDate(new Date());
             for (Transaction transaction : transactionsByDate) {
