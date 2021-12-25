@@ -29,6 +29,7 @@ public class Inventory {
                 break;
             }
         }
+
         if (found) {
             throw new InvalidOperationException("Duplicate art piece in the inventory",
                     artPiece.getId(), "Adding new art piece in the inventory");
@@ -48,11 +49,12 @@ public class Inventory {
                 break;
             }
         }
-        if (!found) {
+       if (!found) {
             throw new InvalidOperationException("Art piece does not exist in the inventory",
                     artId, "Removing art piece from the inventory");
         }
         System.out.println("Art piece removed successfully.");
+
     }
 
     public List<Art> getListOfArt() {
