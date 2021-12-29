@@ -23,7 +23,7 @@ public abstract class Art {
             this.price = aPrice;
         }
 
-        if (aYear == null || aYear == 0 || aYear.toString().length() > 4 || aYear.toString().length() < 4) { // Can be: aYear.toString().length() != 4
+        if (aYear == null || aYear == 0 || aYear.toString().length() != 4) { // was: aYear.toString().length() > 4 || aYear.toString().length() < 4
             throw new InvalidArtException("Invalid year", aId, aYear + "");
         } else {
             this.yearCreated = aYear;

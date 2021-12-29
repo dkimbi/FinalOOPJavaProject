@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="9d7d1bb5-6de6-4c96-b225-e51f01733447" name="Default Changelist" comment="l to L and formats in test file">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FinalProject/src/main/Inventory.java" beforeDir="false" afterPath="$PROJECT_DIR$/FinalProject/src/main/Inventory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FinalProject/src/main/Art.java" beforeDir="false" afterPath="$PROJECT_DIR$/FinalProject/src/main/Art.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,6 +53,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Test" />
         <item itemvalue="Application.Test" />
       </list>
     </recent_temporary>
