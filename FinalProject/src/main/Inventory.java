@@ -81,7 +81,7 @@ public class Inventory {
             BufferedReader br = new BufferedReader(new FileReader(new File(FILE_NAME)));
             String art, type, name, line = "";
             while ((line = br.readLine()) != null) {
-                art = line.substring(line.indexOf("<art>")+"<art>".length(), line.indexOf("</art>"));
+                art = line.substring(line.indexOf("<art>") + "<art>".length(), line.indexOf("</art>"));
                 type = art.substring(art.indexOf("<type>") + "<type>".length(), art.indexOf("</type>"));
                 name = type.substring(type.indexOf("<name>") + "<name>".length(), type.indexOf("</name>"));
                 Art artPiece = null;
